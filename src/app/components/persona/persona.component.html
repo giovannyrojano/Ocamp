@@ -1,0 +1,11 @@
+<h1>persona works!</h1>
+
+<h1>Personas</h1>
+<ul>
+    <li  *ngFor="let p of personas">
+        <a>{{p.id}} {{p.nombres}} {{p.apellidos}}</a> <button (click)="EliminarPersona(p)">Eliminar</button>
+        <button (click)="EditarPersona(p)">Editar</button>
+    </li>
+
+
+</ul>

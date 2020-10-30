@@ -1,0 +1,29 @@
+<p>registrar works!</p>
+<h2>Agregar Persona</h2>
+<form (ngSubmit)="onSubmit()" #formPersona="ngForm">
+    <p>
+
+
+            <input matInput name="nombres" [(ngModel)]="personaModel.nombres"
+                type="text"
+                placeholder="Nombres">
+      
+    </p>
+    <p>
+    
+            <input matInput name="apellidos" [(ngModel)]="personaModel.apellidos"
+                type="text"
+                placeholder="apellidos">
+   
+    </p>
+    <p>
+
+            <input matInput name="departamento" [(ngModel)]="personaModel.departamento"
+                type="text"
+                placeholder="departamento">
+
+    </p>
+    <p>
+        <button type="submit" mat-flat-button color="accent">Guardar</button>
+    </p>
+</form>

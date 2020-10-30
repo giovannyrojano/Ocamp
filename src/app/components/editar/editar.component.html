@@ -1,0 +1,29 @@
+<p>editar works!</p>
+<h2>Editar Persona</h2>
+<form (ngSubmit)="onSubmit()" #formPersona="ngForm">
+    <p>
+
+
+            <input matInput name="nombres" [(ngModel)]="persona.nombres"
+                type="text"
+                placeholder="Nombres">
+      
+    </p>
+    <p>
+    
+            <input matInput name="apellidos" [(ngModel)]="persona.apellidos"
+                type="text"
+                placeholder="apellidos">
+   
+    </p>
+    <p>
+
+            <input matInput name="departamento" [(ngModel)]="persona.departamento"
+                type="text"
+                placeholder="departamento">
+
+    </p>
+    <p>
+        <button type="submit" mat-flat-button color="accent">Actualizar</button>
+    </p>
+</form>
